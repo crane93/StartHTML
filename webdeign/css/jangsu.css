@@ -1,6 +1,19 @@
 /*본문에 사용하는 스타일시트 작성*/
 
 @charset "utf-8";
+/*패딩: 안쪽여백*/
+/*side css*/
 
 .hb {border:1px solid #ccc;}
-.w1200 {width:1200px; margin:0 auto;}				/*가로 좌우 상하(오토는 알아서 )*/
+.w1200 {width:1200px; margin:0 auto;}				/*가로 좌우 상하,좌우(오토는 알아서, 가운데정렬이됨 )*/
+.side {float:right;}
+.side li {float:left; padding:6px 0;}
+.side li a {padding:0 12px;}	
+.h80 {height:60px;}
+
+/*navi css */
+
+.header {border-bottom:1px solid #ccc; padding:20px 0;}		/**나는 헤더라는 클래스//*아랫줄에만 선 넣고싶어*/
+header {width: 1200px; margin:0 auto;}				/*나는 헤더라는 상위?위?*/
+header nav ul li {display:inline;}			/*li가 100%였던게 display주문을 걸어서 강제 길이를 인라인으로 조정한다 display는 디폴트값이 있어서 글자끼리 약간 띄여져있음*/
+
