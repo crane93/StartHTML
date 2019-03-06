@@ -7,6 +7,8 @@
 ul, ol {list-style:none;}
 a {color:#000; font-size:16px; text-decoration:none;}
 a:hover {text-decoration: underline;}
+header, footer, nav, section { display : block;}			/*만약에 하위 브라우저에서 열어도 문제 없다*/
+address {font-style:normal;}
 /*
 	:link: 맨처음 링크속성
 	:visited:한번 방문했던 속성

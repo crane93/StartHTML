@@ -10,10 +10,27 @@
 .side li {float:left; padding:6px 0;}
 .side li a {padding:0 12px;}	
 .h80 {height:60px;}
+/*class: 여러번 사용가능, id: 한번밖에 못씀*/
 
 /*navi css */
 
-.header {border-bottom:1px solid #ccc; padding:20px 0;}		/**나는 헤더라는 클래스//*아랫줄에만 선 넣고싶어*/
-header {width: 1200px; margin:0 auto;}				/*나는 헤더라는 상위?위?*/
+.header {border-bottom:1px solid #ccc; padding:20px 0;}		/*나는 헤더라는 클래스*플로트 해도 여백 생김 ㅎ//*아랫줄에만 선 넣고싶어*/
+header {width: 1200px; margin:0 auto; overflow:hidden}				/*나는 헤더라는 상위?위?, 오버플로우:히든은 높이값이 알아서 잘 벌어짐*/
 header nav ul li {display:inline;}			/*li가 100%였던게 display주문을 걸어서 강제 길이를 인라인으로 조정한다 display는 디폴트값이 있어서 글자끼리 약간 띄여져있음*/
+.header nav ul {float:right;}
+.logo {float:left;}
+.header nav ul li a {font-size:20px; padding:0 60px;}
+.header nav ul li:nth-child(4) a {padding-right:0;}				/*a테그중에 네번째요소를 오른쪽 안쪽여백을 0으로 주고싶다*/
+
+/*main visual css*/
+
+.w100 {width:100%;}
+
+/*contents css*/
+
+.wrap-list { width:1200px; margin:0 auto;}
+.wrap-list .notice-title, .wrap-list .notice1, .wrap-list .notice2, .wrap-list .notice3 {width:277.5px; border:1px solid #ccc; padding:18px; height:300px; float:left;}
+
+/* footer css*/
+footer {clear:both;}
 
