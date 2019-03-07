@@ -2,6 +2,13 @@
 
 @charset "utf-8";
 /*패딩: 안쪽여백*/
+/*
+	숫자1개: 상우하좌
+	숫자 2개: 상하/좌우
+	숫자 3개: 상/좌우/하
+	숫자 4개: 상/우/하/좌
+	*/
+
 /*side css*/
 
 .hb {border:1px solid #ccc;}
@@ -18,7 +25,8 @@
 header {width: 1200px; margin:0 auto; overflow:hidden}				/*나는 헤더라는 상위?위?, 오버플로우:히든은 높이값이 알아서 잘 벌어짐*/
 header nav ul li {display:inline;}			/*li가 100%였던게 display주문을 걸어서 강제 길이를 인라인으로 조정한다 display는 디폴트값이 있어서 글자끼리 약간 띄여져있음*/
 .header nav ul {float:right;}
-.logo {float:left;}
+.logo {float:left; }
+.logo a {text-decoration:none; font-size:32px; color:#000;}
 .header nav ul li a {font-size:20px; padding:0 60px;}
 .header nav ul li:nth-child(4) a {padding-right:0;}				/*a테그중에 네번째요소를 오른쪽 안쪽여백을 0으로 주고싶다*/
 
@@ -28,9 +36,17 @@ header nav ul li {display:inline;}			/*li가 100%였던게 display주문을 걸�
 
 /*contents css*/
 
-.wrap-list { width:1200px; margin:0 auto;}
-.wrap-list .notice-title, .wrap-list .notice1, .wrap-list .notice2, .wrap-list .notice3 {width:277.5px; border:1px solid #ccc; padding:18px; height:300px; float:left;}
-
+.wrap-list { width:1200px; margin:0 auto; padding:60px 0; /*overflow:hidden;*/ }
+.wrap-list:after {contents:""; display:block; clear:both;}						/*css에서 패딩이랑 마진을 동시에 쓸 수 없어 그때 다른방법으로 접근해야하는데 after라고 해서 사이트가 실행되면 클래스가 실행되게 하는게 있음*/
+.wrap-list .notice-title, .wrap-list .notice1, .wrap-list .notice2, .wrap-list .notice3 {width:277.5px; border:1px solid #ccc; padding:18px; height:300px; float:left; margin-right:30px;}
+ .wrap-list .notice3 {margin-right:0;}					/*이걸 안하면 노티스3은 다음으로 남어감*/
+ 
+ 
 /* footer css*/
-footer {clear:both;}
+footer {clear:both;margin-top:100px; padding:40px;background:#ccc; }
+
+
+/* login css*/
+.contents {width: 1200px; margin:0 auto; padding:100px 0; clear:both;}
+
 
