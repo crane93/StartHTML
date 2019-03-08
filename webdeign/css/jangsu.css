@@ -48,5 +48,21 @@ footer {clear:both;margin-top:100px; padding:40px;background:#ccc; }
 
 /* login css*/
 .contents {width: 1200px; margin:0 auto; padding:100px 0; clear:both;}
-
-
+.formbox {width:500px; height:330px; padding: 40px; border-top:1px solid #39f;
+ border-left:1px solid #ddd; border-right:1px solid #ddd; 
+ border-bottom:1px solid #ddd; margin:100px auto 100px auto; position:relative;}		/*로그인 박스 스타일 시트*/
+ .login_form {position:absolute; top:105px; left:40px;}
+ 
+ /*
+ position 
+ 절대위치: 바디의 시작점(왼쪽위)를 (0,0)로 잡고 배치 ㄱㄱ
+ 상대위치:기준점이 있어야함 그 점으로 상대적으로 배치,내가 그 기준점이 된다, 부모는 상대위치로 자식은 절대위치로 잡는다*/
+ 
+ .formbox h2 {font-size:24px; color:#333;}
+.formbox input {border:0; height:40px; width:220px; background:#ececec;}
+.formbox .btn_login { position:absolute; top:105px; right:30px; width:98px; height:84px; line-height:84px; background:#3399ff; color:#fff; text-align:center;}
+/*로그인버튼의 로그인 글자를 정가운데에 정렬할려면?  height의 픽셀과 line-height의 픽셀을 같게, text-align:center라고 하면 됨 ㅎ*/
+.formbox label {width:85px; color:#333; display:inline-block}				/*깔끔하게 보일려고 이짓하는중...ㅎ*/
+/*라벨은 인라인 요소이다 그래서 width가 안먹혀 그래서! 꼭 display:block을 써줘야 한다, 자 근데 하나 더 있다 인라인속성과 블럭요소의 css를 쓰고싶을때..>디스플레이-블럭*/
+.f1_clear {margin:0 0 4px;}
+.member_box {position:absolute; top:200px; left:40px;}

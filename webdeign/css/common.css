@@ -9,6 +9,16 @@ a {color:#000; font-size:16px; text-decoration:none;}
 a:hover {text-decoration: underline;}
 header, footer, nav, section { display : block;}			/*만약에 하위 브라우저에서 열어도 문제 없다*/
 address {font-style:normal;}
+
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="botton"],
+select {
+	padding:0 5px; color:#333; border-radius:1px;				/*보더 래디우스: 모서리를 둥글게~*/
+font-size:15px;}
+/*select전까지 조건이고 조건에 맞으면 select을 실행하십쇼*/
+
 /*
 	:link: 맨처음 링크속성
 	:visited:한번 방문했던 속성
