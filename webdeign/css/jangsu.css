@@ -66,3 +66,10 @@ footer {clear:both;margin-top:100px; padding:40px;background:#ccc; }
 /*라벨은 인라인 요소이다 그래서 width가 안먹혀 그래서! 꼭 display:block을 써줘야 한다, 자 근데 하나 더 있다 인라인속성과 블럭요소의 css를 쓰고싶을때..>디스플레이-블럭*/
 .f1_clear {margin:0 0 4px;}
 .member_box {position:absolute; top:200px; left:40px;}
+
+/*member css*/
+
+table, th, td { padding:16px 5px;}
+.w80{width:80%;}
+.member_table {width:100%;}
+.member_table th {text-align: left;}

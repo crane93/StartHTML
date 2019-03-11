@@ -15,8 +15,8 @@ input[type="password"],
 input[type="search"],
 input[type="botton"],
 select {
-	padding:0 5px; color:#333; border-radius:1px;				/*보더 래디우스: 모서리를 둥글게~*/
-font-size:15px;}
+	padding:10px 5px; color:#333; border-radius:1px;				/*보더 래디우스: 모서리를 둥글게~*/
+font-size:15px; border:1px solid #ccc;}
 /*select전까지 조건이고 조건에 맞으면 select을 실행하십쇼*/
 
 /*
@@ -25,3 +25,16 @@ font-size:15px;}
 	:hover: 마우스위에 올라갔을 때
 	:actice  클릭
 */
+
+.readonly {width:0; height:0; font-size:0; line-height:0; }				/*다 0이야  그니께 일부러 안보이게 해놓은거야 하지만 장애자분들은 보인다*/
+.txtl {text-align: left;}
+.txtc {text-align: center;}
+.txtr {text-align: right;}
+
+.p10 {padding:10px;}
+.p20 {padding:20px;}
+.p15 {padding:15px;}
+
+.btn_ok { border:0 none; width:40px; height: 30px; line-height: 30px; background:#84F594; color:#fff; text-align:center; cursor:pointer;}
+.btn_cancle { border:0 none; width:40px; height: 30px; line-height: 30px; background:#84F594; color:#fff; text-align:center; cursor:pointer;}
+.btn_cancle {background: #fff;}

@@ -5,6 +5,7 @@
 		<meta charset = "utf-8">
 		<link href="../css/common.css" rel="stylesheet">			<!-- 경로가 본판이랑 달라서 css적용 안됨 ㅜ 다시 설정하자-->
 		<link href="../css/jangsu.css" rel="stylesheet">
+		<script src="../js/script.js"></script>
 	</head>
 	<body>
 			<div class ="hb">
@@ -36,7 +37,7 @@
 			<div class = "contents">
 				<div class = "formbox">
 					<h2>개인회원</h2>
-					<form method="post" action ="">
+					<form name="login" method="post" action ="">
 					<div class ="login_form">
 						<div class="f1_clear">
 							<label for="id">아이디</label>
@@ -47,16 +48,15 @@
 							<input type = "password" name="pw">
 						</div>
 					</div>
-						<a href="javascript:checke();" class="btn_login">로그인</a>
+						<a href="javascript:login_check();" class="btn_login">로그인</a>
 					<div class = "member_box">
-						<a href="member/member.html">회원가입</a>
-						<a href="member/idsearch.html">아이디/패스워드찾기</a>
+						<a href="../member/member.html">회원가입</a>						<!--경로 설정을 잘 해줘야함. 로그인폴더에서 나온다음에 멤버폴더로 가야하니까 ../이 필요하당-->
+						<a href="../member/idsearch.html">아이디/패스워드찾기</a>
 					</div>
 					</form>
 				</div>
 			</div>
 			<!-- content end -->
-			
 			
 			<footer>
 				<div class = "w1200">
