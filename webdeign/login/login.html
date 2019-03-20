@@ -1,72 +1,95 @@
-<!doctype html>							
-<html>					
-	<head>		
-		<title>학녀</title>
-		<meta charset = "utf-8">
-		<link href="../css/common.css" rel="stylesheet">			<!-- 경로가 본판이랑 달라서 css적용 안됨 ㅜ 다시 설정하자-->
-		<link href="../css/jangsu.css" rel="stylesheet">
+
+<!doctype html>
+<html>
+	<head>
+		<title>핑구소연</title>
+		<meta charset="utf-8">
+		<link href="../css/common.css" rel="stylesheet">
+		<link href="../css/noso.css" rel="stylesheet">
+		<script src="../js/jquery-3.3.1.min.js"></script>
 		<script src="../js/script.js"></script>
 	</head>
+	
 	<body>
-			<div class ="hb">
-				<div class="w1200">
-					<div class ="h80">
-						<ul class="side">	
-							<li><a href = "login.html">로그인</a></li>
-							<li><a href = "#">사이트맵</a></li>
-							<li><a href = "#">전체메뉴</a></li>
-						</ul>
-					</div>
+		<div class="hb">
+			<div class="w1200">
+				<div class="h80">
+					<ul class="side">
+						<li><a href="../login.html">로그인</a></li>
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">전체메뉴</a></li>
+					</ul>
 				</div>
 			</div>
-			<div class = "header">
-				<header>
-					<h1 class = "logo"><a href = "../index.html">학녀</h1>
-					<nav>			<!--이 영역은 네비게이션입니다-->
-						<ul class = "nav">
-							<li><a href="../intro/intro.html">회사소개</a></li>					
-							<li><a href="../product/product.html">제품안내</a></li>
-							<li><a href="../recruit/recruit.html">채용정보</a></li>
-							<li><a href="../bbs/community.html">소통마당</a></li>
-						</ul>
-					</nav>
-				</header>
-			</div>
-			
-			<!-- content area -->
-			<div class = "contents">
-				<div class = "formbox">
-					<h2>개인회원</h2>
-					<form name="login" method="post" action ="">
-					<div class ="login_form">
-						<div class="f1_clear">
+		</div>
+		
+		<div class="header">
+			<header>
+				<h1 class="logo"><a href="../index.html">남녀노소</h1>
+				<nav id="nav">
+					<ul class="depth1">
+						<li class="on"><a href="../intro/intro.html">회사소개</a>
+							<ul class="depth2">
+								<li><a href="#">인사말</a></li>
+								<li><a href="#">연혁</a></li>
+								<li><a href="#">UI디자인(기업이념,디자인)</a></li>
+								<li><a href="#">오시는길</a></li>
+							</ul>
+						</li>
+						<li><a href="../product/product.html">제품안내</a></li>
+						<li><a href="../recruit/recruit.html">채용공고</a></li>
+						<li><a href="../bbs/community.html">커뮤니티</a>
+							<ul class="depth2">
+								<li><a href="../bbs/notice.html">공지사항</a></li>
+								<li><a href="#">질문답변</a></li>
+								<li><a href="#">자주하는 질문</a></li>
+								<li><a href="#">자료실</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		
+		<!-- content area-->
+		<div class="contents">
+			<div class="formbox">
+				<h2>개인회원</h2>
+				<form name="login" method="post" action="">
+					<div class="login_form">
+						<div class="fl_clear">
 							<label for="id">아이디</label>
-							<input type = "text" name = "id" id="id">			<!--웹 접근성 향상을 위해 placeholder="아이디입력" 삭제, 아래동일-->
+							<input type="text" name="id" id="id" />
 						</div>
-						<div class="f1_clear">			<!-- 줄변경 효과를 위해 div그룹으로 묶음-->
+						<div class="fl_clear">
 							<label for="pw">패스워드</label>
-							<input type = "password" name="pw">
+							<input type="password" name="pw" id="pw"/>
 						</div>
 					</div>
-						<a href="javascript:login_check();" class="btn_login">로그인</a>
-					<div class = "member_box">
-						<a href="../member/member.html">회원가입</a>						<!--경로 설정을 잘 해줘야함. 로그인폴더에서 나온다음에 멤버폴더로 가야하니까 ../이 필요하당-->
-						<a href="../member/idsearch.html">아이디/패스워드찾기</a>
+					
+					
+					<a href="javascript:login_check();" class="btn_login">로그인</a>
+					<div class="member_box">
+					<a href="../member/member.html">회원가입</a>
+					
+					<a href="../member/idsearch.html">아이디/패스워드찾기</a>
 					</div>
-					</form>
-				</div>
+				</form>
 			</div>
-			<!-- content end -->
-			
-			<footer>
-				<div class = "w1200">
-					<p>	
-					제이에스엘인재개발원주식회사
-					대표: 채민경</p>
-					<address>  	
-						대전광역시 중구 용두동123
+		</div>
+		<!--content end -->
+		
+		
+		
+		<footer>
+				<div class="w1200">
+					<p>
+					남녀노소 인재개발원 주식회사.
+					대표:노소연</p><!-- 문단태그 !-->
+					<address>
+						대전광역시 전밍동
 					</address>
 				</div>
 			</footer>
-	</body>
-</html>			
+		</body>
+	</html>

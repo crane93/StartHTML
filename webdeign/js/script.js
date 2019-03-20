@@ -1,13 +1,20 @@
-//파일로 만들어서 쓸때는 <script> 라는 태그 필요없당
-function login_check() {						<!--자바스크립트를 위한 함수 생성, 아이디랑 패스워드 입력안하면 경고창 뜨게 만들기~, 이 함수는 어느줄에 잇어도 상관없당-->
-	if(document.login.id.value == ""){
-		alert("아이디 입력");
-		document.login.id.focus();					<!--오 커서의 위치가 알아서 아이디쪽으로 감-->
-		return false;
-	}
-	if(document.login.pw.value==""){
-		alert("패스워드 입력");
-		document.login.pw.focus();
-		return false;
-	}
-}
+$(function(){
+			//$("#nav>ul>li").hover(function(){<!-- 이벤트 핸들러,-->
+				$("#nav>ul>li").hover(function(){
+					$(this).children(".depth2").stop().slideDown(200);
+					$(this).addClass("on");
+			}, function(){
+				$(".depth2").stop().slideUp(200);
+				$(this).removeClass("on");
+			});//거짓은 콤마
+		
+	
+	$('.bxslider').bxSlider({	//j쿼리 다운받은거임,
+		mode: 'vertical',
+		auto: true,
+		captions: true,
+		speed:500,
+		slideWidth: 0			//화면에 꽉차게 보임
+	});
+
+});		//index에 있는 스크립트를 따로 js 파일로 만들음
