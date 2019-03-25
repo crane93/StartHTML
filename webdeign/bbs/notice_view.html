@@ -5,6 +5,8 @@
 		<meta charset="utf-8">
 		<link href="../css/common.css" rel="stylesheet">
 		<link href="../css/jangsu.css" rel="stylesheet">
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/script.js"></script>
 	</head>
 	<body>
 		<div class="hb">
@@ -22,12 +24,26 @@
 		<div class="header">
 			<header>
 				<h1 class="logo"><a href="../index.html">장수하늘소</a></h1>
-				<nav>
-					<ul class="nav">
-						<li><a href="../intro/intro.html">회사소개</a></li>
-						<li><a href="product.html">제품안내</a></li>
-						<li><a href="../recruit/recruit.html">채용정보</a></li>
-						<li><a href="../bbs/community.html">커뮤니티</a></li>
+				<nav id="nav">
+					<ul class="depth1">
+						<li><a href="intro/intro.html">회사소개</a>
+							<ul class="depth2">
+								<li><a href="#">인사말</a></li>
+								<li><a href="#">연혁</a></li>
+								<li><a href="#">UI디자인</a></li>
+								<li><a href="#">오시는길</a></li>
+							</ul>
+						</li>
+						<li><a href="product/product.html">제품안내</a></li>
+						<li><a href="recruit/recruit.html">채용정보</a></li>
+						<li><a href="bbs/community.html">커뮤니티</a>
+							<ul  class="depth2">
+								<li><a href="../bbs/notice.html">공지사항</a></li>
+								<li><a href="../bbs/qa.html">질문답변</a></li>
+								<li><a href="../bbs/faq.html">자주하는질문</a></li>
+								<li><a href="../bbs/download.html">자료실</a></li>
+							</ul>
+						</li>
 					</ul>
 				</nav>
 			</header>
@@ -36,10 +52,10 @@
 		<!-- content area -->
 			<div class="contents">
 				<div class="bbs_view">
-					<h2>제목 허니버터칲</h2>
+					<h2>공지사항 제목 부분</h2>
 					<p class="item">2019-09-13 | 관리자 | 조회수 270</p>
 					<div class="line"></div>
-					<p>해태의 '허니버터칩' 원조로 알려진 '행복버터칩'이 화제다. </p>
+					<p>공지사항 내용이 보이는 영역 입니다</p>
 
 <p>최근 허니버터칩 구하기가 하늘에 별 따기 수준에 이르자, 일본 유학생 및 여행객 등을 중심으로 비슷한 맛의 일본 과자 행복버터칩이 입소문을 타고 있다. </p>
 
@@ -58,7 +74,7 @@
 					
 				</div>
 				<div class="btn_view">
-					<a href=""><< 이전글</a> <a href="">수정</a> <a href="" onClick="confirm('삭제하시겠습니까?')">삭제</a> <a href="notice.html">목록</a> <a href="">다음글 >></a>
+					<a href=""><< 이전글</a> <a href="">수정</a> <a href="" onClick="confirm('정말로 삭제 하실래요?')">삭제</a> <a href="notice.html">목록</a> <a href="">다음글 >></a>
 				</div>
 			</div>
 		<!-- content end -->
