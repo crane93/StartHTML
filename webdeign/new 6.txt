@@ -1,9 +1,0 @@
-what is html?
-<form>
-	<input type = "text">				글자를 입력받음
-	<input type = "password">					안보이게 입력받고 싶어
-	<input type = "radio">			여러개중 하나 선택
-	<input type = "chekbox">				여러개의 항복을 선택
-	<input type = "button">				저장, 목록 등등 버튼을 만드는것
-	name= "ID"		톰켓서버로 이꾸욧
-</form>
